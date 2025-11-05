@@ -1,0 +1,52 @@
+# Multi-modal Detection System Configuration
+
+# Detection thresholds
+detection:
+  fraud_threshold: 0.5
+  modality_weights:
+    text: 0.25
+    image: 0.25
+    audio: 0.25
+    video: 0.25
+  cross_modal_threshold: 0.7
+
+# Feature extraction
+features:
+  text:
+    model: "roberta-base"
+    max_length: 512
+  image:
+    model: "resnet50"
+    input_size: [224, 224]
+  audio:
+    sample_rate: 44100
+    window_size: 0.025
+    hop_size: 0.010
+  video:
+    fps: 30
+    frame_size: [224, 224]
+
+# Provenance tracing
+tracing:
+  enabled: true
+  check_timestamps: true
+  check_metadata: true
+  verify_chain: true
+
+# Reverse engineering
+reverse_engineering:
+  enabled: true
+  analyze_patterns: true
+  detect_generators: true
+
+# Continuous learning
+learning:
+  enabled: true
+  update_frequency: 10
+  data_dir: "models/learning_data"
+
+# Logging
+logging:
+  level: "INFO"
+  file: "logs/detector.log"
+

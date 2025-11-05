@@ -1,0 +1,55 @@
+# Multi-modal Detection System Requirements
+
+# Core Dependencies
+numpy>=1.24.0
+pandas>=2.0.0
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+transformers>=4.30.0
+sentence-transformers>=2.2.0
+
+# Multi-modal Processing
+Pillow>=10.0.0
+opencv-python>=4.7.0
+librosa>=0.10.0
+soundfile>=0.12.0
+moviepy>=1.0.3
+
+# Machine Learning & AI
+scikit-learn>=1.3.0
+tensorflow>=2.13.0
+keras>=2.13.0
+tf-keras>=2.20.0  # Required for sentence-transformers compatibility
+# detectron2>=0.6.0  # Optional: Install separately from source if needed
+
+# Provenance & Tracing
+cryptography>=41.0.0
+# hashlib-compat>=1.0.0  # Built-in to Python 3.9+
+
+# Feature Extraction
+scipy>=1.10.0
+networkx>=3.1.0
+# openface>=0.2.1  # Optional: Install separately if needed
+
+# Data Processing
+pyyaml>=6.0
+python-dotenv>=1.0.0
+loguru>=0.7.0
+
+# Testing
+pytest>=7.4.0
+pytest-cov>=4.1.0
+pytest-mock>=3.11.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.15.0
+
+# Utilities
+tqdm>=4.65.0
+rich>=13.5.0
+click>=8.1.0
+
+
